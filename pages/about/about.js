@@ -5,14 +5,61 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name: 'test',
+    students: [
+      {id:111, name: 'alpah'},
+      {id:112, name: 'bravo'},
+      {id:113, name: 'charlic'},
+      {id:114, name: 'delta'}
+    ],
+    counter: 0,
+    btnText: 'http',
+    imgSrc: ''
+  },
 
+  studentsFn() {
+    return this.data.students.map((val) => {
+      return {id: val.id + 100, name: `${val.name} --`}
+    })
+  },
+
+  addCounter: function() {
+    this.setData({counter: this.data.counter + 1});
+    console.log(this.studentsFn());
+  },
+
+  subCounter: function() {
+    this.setData({counter: this.data.counter - 1});    
+  },
+
+  testHttp() {
+    wx.request({
+      url: 'http://localhost:3000/course',
+      success: (res) => {
+        const data = res.data;
+        console.log(data)
+      }
+    })
+  },
+
+  selectImg() {
+    wx.chooseImage({
+      success: (res) => {
+        console.log(res)
+        const {tempFilePaths} = res;
+        this.setData({
+          imgSrc: tempFilePaths[0]
+        })
+      },
+      complete: (res) => {}
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log('about lunch');
   },
 
   /**

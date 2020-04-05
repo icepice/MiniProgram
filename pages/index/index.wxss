@@ -23,3 +23,7 @@
 .title {
   color: #f00;
 }
+
+.my-hover-class {
+  background-color: #f00;
+}

@@ -1,0 +1,10 @@
+<!--pages/comp_test/comp_test.wxml-->
+
+<my-style ext-class="title-red" title="alpha"/>
+<my-style ext-class="title-blue" title="bravo"/>
+<my-style/>
+
+<wp-header titleList="{{titleList}}" bind:tabclick="handleTabClick"/>
+
+<text>{{title}}</text>
+

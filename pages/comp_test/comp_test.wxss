@@ -1,0 +1,9 @@
+/* pages/comp_test/comp_test.wxss */
+
+.title-red {
+  color: red;
+}
+
+.title-blue {
+  color: blue;
+}

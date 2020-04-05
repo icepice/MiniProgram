@@ -1,0 +1,8 @@
+<!--components/wp-header/wp-header.wxml-->
+<view class="wp-header">
+  <view class="header-wrap">
+    <view class="header-item" wx:for="{{titleList}}" wx:key="index" data-id="{{index}}" bind:tap="activate">    
+      <text class="item-text {{curActive == index ? 'active' : '' }}">{{item}}</text>
+    </view>
+  </view>
+</view>

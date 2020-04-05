@@ -1,0 +1,4 @@
+<!--components/my_style/my_style.wxml-->
+
+
+<view class="title ext-class">{{title}}</view>

@@ -1,5 +1,23 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
-<text>pages/about/about.wxml</text>
-<text>pages/about/about.wxml</text>
-<text>pages/about/about.wxml</text>
+<view>
+  <text>pages/about/about.wxml</text>
+  <view wx:for="{{students}}" wx:key="id">
+    {{item.id}} -- {{item.name}}
+  </view> 
+  <view>当前计数：{{counter}}</view>
+  <button size="mini" bindtap="addCounter">+</button>
+  <button size="mini" bindtap="subCounter">-</button>
+</view>
+<open-data type="userNickName"></open-data>
+
+<button bindtap="testHttp">{{btnText}}</button>
+
+<image src="{{imgSrc}}"></image>
+<button bindtap="selectImg">选中图片</button>
+
+<image src="https://cli.oss.aliyuncs.com/2015/04/22/21f5deae6515c6c8a8834c5a65506971.jpg" show-menu-by-longpress mode="aspectFit"></image>
+
+<block>
+<text>test</text>
+</block>
+<my-cpn />

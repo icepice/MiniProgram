@@ -1,0 +1,5 @@
+/* components/my_style/my_style.wxss */
+
+.title {
+  font-size: 72rpx;  
+}

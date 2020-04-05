@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-style": "/components/my_style/my_style",
+    "wp-header": "/components/wp-header/wp-header"
+  },
+  "navigationBarTitleText": "组件"
+}

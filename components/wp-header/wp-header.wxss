@@ -1,0 +1,30 @@
+/* components/wp-header/wp-header.wxss */
+
+.wp-header {
+  
+}
+
+.wp-header .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefefe;
+  box-shadow: 0 6rpx 6rpx #eee;
+}
+
+.wp-header .header-wrap .header-item {
+  flex: 1;
+  text-align: center;  
+  padding: 8rpx 0;
+}
+
+.header-wrap .header-item .item-text {  
+  display: inline-block;
+  padding: 12rpx 24rpx;  
+  border-bottom: 10rpx transparent solid;
+}
+
+.header-wrap .header-item .item-text.active {
+  color: hotpink;
+  border-bottom: 10rpx hotpink solid;
+}
